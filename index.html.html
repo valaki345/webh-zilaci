@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='hu'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>60-as évek autói</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #555;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animated {
+            animation: fadeIn 2s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>60-as évek autói</h1>
+    </header>
+    <nav>
+        <a href='#tortenelem'>Történelem</a>
+        <a href='#galeria'>Galéria</a>
+        <a href='#kapcsolat'>Kapcsolat</a>
+    </nav>
+    <section id='tortenelem' class='content animated'>
+        <h2>A 60-as évek autóinak története</h2>
+        <div class='info'>
+            <p>A 60-as évek az autógyártás aranykora volt, ahol a stílus, az elegancia és az erő találkozott. Olyan ikonikus modellek születtek, mint a Ford Mustang, a Chevrolet Camaro és a Volkswagen Bogár, amelyek nemcsak a sebességet, de a szabadságot is szimbolizálták. Ezek az autók a mai napig a retro stílus és az amerikai álom jelképei.</p>
+        </div>
+    </section>
+    <section id='galeria' class='content animated'>
+        <h2>Galéria</h2>
+        <div class='gallery'>
+            <img src='https://via.placeholder.com/300x200' alt='Ford Mustang'>
+            <img src='https://via.placeholder.com/300x200' alt='Chevrolet Camaro'>
+            <img src='https://via.placeholder.com/300x200' alt='Volkswagen Bogár'>
+        </div>
+    </section>
+    <footer id='kapcsolat'>
+        <p>&copy; 2025 Klasszikus Autók | Minden jog fenntartva</p>
+    </footer>
+</body>
+</html>
